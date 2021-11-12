@@ -6,16 +6,25 @@ import {
   TouchableOpacity,
   TextInput,
   Image,
+  StatusBar
 } from "react-native";
 import { COLORS } from "../constants";
 import { FontAwesome } from "@expo/vector-icons";
+import logo from "../assets/images/logo.jpg";
 
 export default function Login({ navigation }) {
   const [securePassword, setSecurePassword] = useState(true);
 
   return (
-    <View style={{ flex: 1, backgroundColor: COLORS.lightGray }}>
-      <View style={{ flex: 1 }}>{/* Image */}</View>
+    <View style={{ flex: 1, backgroundColor: "#12171b" }}>
+    <StatusBar barStyle="light-content" />
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <Image
+          source={logo}
+          style={{ height: 400, marginTop: 40 }}
+          resizeMode="contain"
+        />
+      </View>
       <View style={styles.body}>
         <Text style={styles.title}>Log-in</Text>
         <View style={{ padding: 20 }}>

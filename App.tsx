@@ -7,7 +7,7 @@ import AppLoading from "expo-app-loading";
 import { FontAwesome } from "@expo/vector-icons";
 
 // screens
-import { Home, Login } from "./screens/";
+import { Home, Login, Cart } from "./screens/";
 
 import { images, icons, COLORS, FONTS, SIZES } from "./constants";
 
@@ -47,7 +47,7 @@ const App = () => {
         <Stack.Screen
           name="Home"
           component={Home}
-          options={{
+          options={({ navigation }) => ({
             title: "SHOE SELECTOR",
             headerStyle: {
               //backgroundColor: '#f4511e',
@@ -61,25 +61,24 @@ const App = () => {
                 style={{ marginLeft: SIZES.padding }}
                 onPress={onPress}
               >
-                <FontAwesome
-                  name="chevron-left"
-                  size={24}
-                  color="black"
-                />
+                <FontAwesome name="chevron-left" size={24} color="black" />
               </TouchableOpacity>
             ),
             headerRight: () => (
               <TouchableOpacity
                 style={{ marginRight: SIZES.padding }}
-                onPress={() => console.log("Pressed")}
+                onPress={() => navigation.navigate("Cart")}
               >
-                <FontAwesome
-                  name="shopping-cart"
-                  size={24}
-                  color="black"
-                />
+                <FontAwesome name="shopping-cart" size={24} color="black" />
               </TouchableOpacity>
             ),
+          })}
+        />
+        <Stack.Screen
+          name="Cart"
+          component={Cart}
+          options={{
+            // headerShown: false,
           }}
         />
       </Stack.Navigator>
