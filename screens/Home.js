@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     StyleSheet,
-    SafeAreaView,
+    StatusBar,
     View,
     Text,
     Image,
@@ -227,6 +227,7 @@ const Home = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
+            <StatusBar barStyle="dark-content" />
             <Text style={{ marginTop: SIZES.radius, marginHorizontal: SIZES.padding, ...FONTS.largeTitleBold }}>TRENDING</Text>
 
             <View style={{ height: 260, marginTop: SIZES.radius }}>
