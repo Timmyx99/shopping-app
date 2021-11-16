@@ -36,7 +36,23 @@ const App = () => {
 
   return (
     <NavigationContainer theme={theme}>
-      <Stack.Navigator initialRouteName="Login">
+      <Stack.Navigator
+        initialRouteName="Login"
+        screenOptions={{
+          headerTintColor: COLORS.lightGray,
+          headerTitleStyle: {
+            ...FONTS.navTitle,
+          },
+          headerLeft: ({ onPress }) => (
+            <TouchableOpacity
+              style={{ marginLeft: SIZES.padding }}
+              onPress={onPress}
+            >
+              <FontAwesome name="chevron-left" size={24} color="black" />
+            </TouchableOpacity>
+          ),
+        }}
+      >
         <Stack.Screen
           name="Login"
           component={Login}
@@ -49,21 +65,6 @@ const App = () => {
           component={Home}
           options={({ navigation }) => ({
             title: "SHOE SELECTOR",
-            headerStyle: {
-              //backgroundColor: '#f4511e',
-            },
-            headerTintColor: COLORS.lightGray,
-            headerTitleStyle: {
-              ...FONTS.navTitle,
-            },
-            headerLeft: ({ onPress }) => (
-              <TouchableOpacity
-                style={{ marginLeft: SIZES.padding }}
-                onPress={onPress}
-              >
-                <FontAwesome name="chevron-left" size={24} color="black" />
-              </TouchableOpacity>
-            ),
             headerRight: () => (
               <TouchableOpacity
                 style={{ marginRight: SIZES.padding }}
@@ -78,7 +79,7 @@ const App = () => {
           name="Cart"
           component={Cart}
           options={{
-            // headerShown: false,
+            title: 'CART',
           }}
         />
       </Stack.Navigator>
