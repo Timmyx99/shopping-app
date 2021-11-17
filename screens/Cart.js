@@ -50,7 +50,7 @@ export default class Cart extends React.Component {
           itemId: "801099131",
           name: "Nike Metcon 5",
           thumbnailImage:
-            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thenextsole.com%2Fen%2Fp%2Fnike-free-metcon-3-trainingsschoen-voor-heren-blauw-cj0861-410&psig=AOvVaw0XEHtp8qgH9rMNkeT_0ccN&ust=1637269292643000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjlt-CloPQCFQAAAAAdAAAAABAD",
+            "../assets/images/nike-metcon-5-black.png",
           qty: 1,
           color: "Blue",
           salePrice: "27.99",
