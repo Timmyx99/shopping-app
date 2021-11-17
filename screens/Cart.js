@@ -28,9 +28,9 @@ export default class Cart extends React.Component {
         /* Sample data from walmart */
         {
           itemId: "501436323",
-          name: "Power Wheels Dune Racer Extreme",
+          name: "Nike Metcon 4",
           thumbnailImage:
-            "https://i5.walmartimages.com/asr/a3922e8e-2128-4603-ba8c-b58d1333253b_1.44d66337098c1db8fed9abe2ff4b57ce.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF",
+            "../assets/images/nike-metcon-4.png",
           color: "Red",
           qty: 1,
           salePrice: "105",
@@ -38,9 +38,9 @@ export default class Cart extends React.Component {
         },
         {
           itemId: "35031861",
-          name: "Better Homes & Gardens Leighton Twin Over Twin Wood Bunk Bed, Multiple Finishes",
+          name: "Nike Metcon 6",
           thumbnailImage:
-            "https://i5.walmartimages.com/asr/4aedb609-4b61-4593-ad8a-cdc8c88696b1_1.3f505ce3d55db4745cf4c51d559994dc.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF",
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftop4fitness.com%2Fp%2Fnike-metcon-4-xd-bv1636-001&psig=AOvVaw1Qsgg8GlHwotRh4hKGnPwa&ust=1637269551550000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKD69sqmoPQCFQAAAAAdAAAAABAO",
           qty: 1,
           color: "Green",
           salePrice: "199",
@@ -48,9 +48,9 @@ export default class Cart extends React.Component {
         },
         {
           itemId: "801099131",
-          name: "LEGO Star Wars 2019 Advent Calendar 75245 Holiday Building Kit",
+          name: "Nike Metcon 5",
           thumbnailImage:
-            "https://i5.walmartimages.com/asr/9a8ea1ab-311d-455c-bda8-ce15692a8185_3.208d48e0260f80891d32b351cb116a4b.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF",
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thenextsole.com%2Fen%2Fp%2Fnike-free-metcon-3-trainingsschoen-voor-heren-blauw-cj0861-410&psig=AOvVaw0XEHtp8qgH9rMNkeT_0ccN&ust=1637269292643000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjlt-CloPQCFQAAAAAdAAAAABAD",
           qty: 1,
           color: "Blue",
           salePrice: "27.99",
@@ -58,9 +58,9 @@ export default class Cart extends React.Component {
         },
         {
           itemId: "42608079",
-          name: "Little Tikes Cape Cottage Playhouse, Tan",
+          name: "Nike Metcon 3",
           thumbnailImage:
-            "https://i5.walmartimages.com/asr/2654cd64-1471-44af-8b0c-1debaf598cb3_1.c30c481d1ac8fdd6aa041c0690d7214c.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF",
+            "../assets/images/nike-metcon-3.png",
           color: "Purple",
           qty: 1,
           salePrice: "129.99",
@@ -68,9 +68,9 @@ export default class Cart extends React.Component {
         },
         {
           itemId: "247714372",
-          name: 'HP 14" Laptop, Intel Core i3-1005G1, 4GB SDRAM, 128GB SSD, Pale Gold, 14-DQ1038wm',
+          name: 'Nike Metcon 2',
           thumbnailImage:
-            "https://i5.walmartimages.com/asr/b442f6e7-c5e1-4387-9cd9-9205811d4980_1.82b94d1c11dd12a6697bc517219f331e.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF",
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nike.com%2Ft%2Fmetcon-6-mens-training-shoes-mv1qKX&psig=AOvVaw1BAbdWniRvHwoxox4IEjEp&ust=1637268897365000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjWhIqkoPQCFQAAAAAdAAAAABAN",
           qty: 1,
           color: "Black",
           salePrice: "269",
